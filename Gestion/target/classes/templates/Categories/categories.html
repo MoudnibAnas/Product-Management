@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Categories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-6">
+<main class="max-w-5xl w-full bg-white p-8 rounded-xl shadow-xl">
+    <section class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-gray-800">Product Categories</h1>
+        <button id="showFormButton" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center gap-2">
+            <i class="ph ph-plus"></i> Add New Category
+        </button>
+    </section>
+
+    <div class="relative mb-6">
+        <input type="search" id="searchInput" placeholder="Search Categories..." class="w-full p-3 border border-gray-300 rounded-md">
+        <i class="ph ph-magnifying-glass absolute right-3 top-3 text-gray-500"></i>
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+            <thead>
+            <tr class="bg-gray-200">
+                <th class="p-3 border">Category ID</th>
+                <th class="p-3 border">Name</th>
+                <th class="p-3 border">Description</th>
+                <th class="p-3 border">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="category : ${categories}" class="text-center">
+                <td class="p-3 border" th:text="${category.categoryId}"></td>
+                <td class="p-3 border" th:text="${category.name}"></td>
+                <td class="p-3 border" th:text="${category.description}"></td>
+                <td class="p-3 border">
+                    <button class="edit-btn bg-yellow-500 hover:bg-yellow-400 text-white px-3 py-1 rounded-md"
+                            th:attr="data-id=${category.categoryId}, data-name=${category.name}, data-description=${category.description}">
+                        <i class="ph ph-pencil"></i> Edit
+                    </button>
+                    <button class="delete-btn bg-red-500 hover:bg-red-400 text-white px-3 py-1 rounded-md"
+                            th:attr="data-id=${category.categoryId}">
+                        <i class="ph ph-trash"></i> Delete
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<!-- Modal for Add / Update -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+        <div class="flex justify-between items-center mb-4">
+            <h2 id="modalTitle" class="text-xl font-bold">Add New Category</h2>
+            <button id="closeModal" class="text-gray-600 text-2xl">&times;</button>
+        </div>
+        <form id="categoryForm" action="#" th:action="@{/categories/add}" method="POST" class="flex flex-col gap-4">
+            <label for="categoryId" class="font-medium">Category ID:</label>
+            <input type="text" id="categoryId" name="categoryId" required class="p-2 border border-gray-300 rounded-md">
+            <label for="name" class="font-medium">Category Name:</label>
+            <input type="text" id="name" name="name" required class="p-2 border border-gray-300 rounded-md">
+            <label for="description" class="font-medium">Description:</label>
+            <textarea id="description" name="description" required class="p-2 border border-gray-300 rounded-md"></textarea>
+            <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Save Category
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById("showFormButton").addEventListener("click", function () {
+        document.getElementById("modal").classList.remove("hidden");
+        document.getElementById("modalTitle").textContent = "Add New Category";
+        document.getElementById("categoryForm").setAttribute("action", "/categories/add");
+    });
+
+    document.querySelectorAll(".edit-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            document.getElementById("modal").classList.remove("hidden");
+            document.getElementById("modalTitle").textContent = "Update Category";
+            document.getElementById("categoryForm").setAttribute("action", "/categories/update");
+            document.getElementById("categoryId").value = this.getAttribute("data-id");
+            document.getElementById("name").value = this.getAttribute("data-name");
+            document.getElementById("description").value = this.getAttribute("data-description");
+        });
+    });
+
+    document.getElementById("closeModal").addEventListener("click", function () {
+        document.getElementById("modal").classList.add("hidden");
+    });
+</script>
+<script th:src="@{/js/script.js}"></script>
+<script th:src="@{/js/categories.js}"></script>
+</body>
+
+</html>

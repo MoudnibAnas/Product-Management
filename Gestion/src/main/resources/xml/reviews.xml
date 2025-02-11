@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<reviews>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P001</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C101</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>This laptop is amazing! It's fast, powerful, and the battery life is incredible.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P002</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C102</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Very happy with my purchase. The phone is well-built and performs well for my everyday needs.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P003</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C103</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Excellent headphones! The noise cancellation is fantastic, and the sound quality is top-notch.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P004</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C104</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Comfortable and stylish t-shirt. Good quality for the price.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P005</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C105</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>These jeans fit perfectly! They're comfortable and look great.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P006</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C106</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Great running shoes! They're lightweight and provide good support.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P007</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C107</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Amazing camera! The image quality is superb, and it's easy to use.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P008</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C108</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>This coffee maker is a lifesaver! It makes delicious coffee every morning.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P009</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C109</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Beautiful bookcase! It's sturdy, well-made, and looks great in my living room.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P010</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C110</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Stylish sunglasses that offer good protection from the sun.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P011</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C111</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Love this smartwatch! It tracks my fitness activity accurately and has a lot of useful features.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P012</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C112</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>This wireless mouse is comfortable to use and very responsive.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P013</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C113</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Great backpack! It's spacious, durable, and perfect for everyday use.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P014</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C114</customerId>
+                                                
+        
+        
+        
+        
+        <rating>4</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>This table lamp is stylish and provides good lighting for my desk.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+                        
+    
+    
+    
+    
+    <review>
+                                                
+        
+        
+        
+        
+        <productId>P015</productId>
+                                                
+        
+        
+        
+        
+        <customerId>C115</customerId>
+                                                
+        
+        
+        
+        
+        <rating>5</rating>
+                                                
+        
+        
+        
+        
+        <reviewText>Fun board game! It's a great way to spend time with friends and family.</reviewText>
+                                            
+    
+    
+    
+    
+    </review>
+            
+    
+    
+    <review>
+                                
+        
+        
+        <productId>P001</productId>
+                                
+        
+        
+        <customerId>C177</customerId>
+                        
+        
+        <rating>1</rating>
+                                
+        
+        
+        <reviewText>Excellent!</reviewText>
+                            
+    
+    
+    </review>
+        
+    
+    <review>
+                        
+        
+        <productId>P001</productId>
+                        
+        
+        <customerId>C177</customerId>
+                        
+        
+        <rating>5</rating>
+                        
+        
+        <reviewText>Excellent!</reviewText>
+                    
+    
+    </review>
+    
+    <review>
+                
+        <productId>P001</productId>
+                
+        <customerId>C177</customerId>
+                
+        <rating>5</rating>
+                
+        <reviewText>Excellent!</reviewText>
+            
+    </review>
+</reviews>

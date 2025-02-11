@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<products>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P001</productId>
+                                                
+        
+        
+        
+        
+        <name>Laptop</name>
+                                                
+        
+        
+        
+        
+        <description>High-performance laptop with powerful processor and ample storage.</description>
+                                                
+        
+        
+        
+        
+        <price>1299.99</price>
+                                                
+        
+        
+        
+        
+        <category>Electronics</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/laptop.jpg</imageUrl>
+            
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P002</productId>
+                                                
+        
+        
+        
+        
+        <name>Smartphone</name>
+                                                
+        
+        
+        
+        
+        <description>Latest flagship smartphone with advanced camera and 5G connectivity.</description>
+                                                
+        
+        
+        
+        
+        <price>999.00</price>
+                                                
+        
+        
+        
+        
+        <category>Electronics</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/smartphone.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P003</productId>
+                                                
+        
+        
+        
+        
+        <name>Headphones</name>
+                                                
+        
+        
+        
+        
+        <description>Wireless noise-canceling headphones with excellent sound quality.</description>
+                                                
+        
+        
+        
+        
+        <price>299.00</price>
+                                                
+        
+        
+        
+        
+        <category>Electronics</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/headphones.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P004</productId>
+                                                
+        
+        
+        
+        
+        <name>T-Shirt</name>
+                                                
+        
+        
+        
+        
+        <description>Comfortable cotton t-shirt in various colors.</description>
+                                                
+        
+        
+        
+        
+        <price>19.99</price>
+                                                
+        
+        
+        
+        
+        <category>Clothing</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/t-shirt.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P005</productId>
+                                                
+        
+        
+        
+        
+        <name>Jeans</name>
+                                                
+        
+        
+        
+        
+        <description>Classic denim jeans with a comfortable fit.</description>
+                                                
+        
+        
+        
+        
+        <price>59.99</price>
+                                                
+        
+        
+        
+        
+        <category>Clothing</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/jeans.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P006</productId>
+                                                
+        
+        
+        
+        
+        <name>Running Shoes</name>
+                                                
+        
+        
+        
+        
+        <description>Lightweight and breathable running shoes for optimal performance.</description>
+                                                
+        
+        
+        
+        
+        <price>89.99</price>
+                                                
+        
+        
+        
+        
+        <category>Shoes</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/running_shoes.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P007</productId>
+                                                
+        
+        
+        
+        
+        <name>Digital Camera</name>
+                                                
+        
+        
+        
+        
+        <description>High-resolution digital camera with interchangeable lenses.</description>
+                                                
+        
+        
+        
+        
+        <price>599.00</price>
+                                                
+        
+        
+        
+        
+        <category>Electronics</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/camera.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P008</productId>
+                                                
+        
+        
+        
+        
+        <name>Coffee Maker</name>
+                                                
+        
+        
+        
+        
+        <description>Automatic coffee maker with programmable timer and multiple brew options.</description>
+                                                
+        
+        
+        
+        
+        <price>149.00</price>
+                                                
+        
+        
+        
+        
+        <category>Home Appliances</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/coffee_maker.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P009</productId>
+                                                
+        
+        
+        
+        
+        <name>Bookcase</name>
+                                                
+        
+        
+        
+        
+        <description>Wooden bookcase with multiple shelves for books and decorative items.</description>
+                                                
+        
+        
+        
+        
+        <price>199.00</price>
+                                                
+        
+        
+        
+        
+        <category>Furniture</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/bookcase.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P010</productId>
+                                                
+        
+        
+        
+        
+        <name>Sunglasses</name>
+                                                
+        
+        
+        
+        
+        <description>Stylish sunglasses with UV protection.</description>
+                                                
+        
+        
+        
+        
+        <price>59.00</price>
+                                                
+        
+        
+        
+        
+        <category>Accessories</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/sunglasses.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P011</productId>
+                                                
+        
+        
+        
+        
+        <name>Smart Watch</name>
+                                                
+        
+        
+        
+        
+        <description>Smartwatch with fitness tracking, heart rate monitoring, and smartphone notifications.</description>
+                                                
+        
+        
+        
+        
+        <price>249.00</price>
+                                                
+        
+        
+        
+        
+        <category>Electronics</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/smartwatch.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P012</productId>
+                                                
+        
+        
+        
+        
+        <name>Wireless Mouse</name>
+                                                
+        
+        
+        
+        
+        <description>Ergonomic wireless mouse with adjustable DPI and silent clicks.</description>
+                                                
+        
+        
+        
+        
+        <price>39.99</price>
+                                                
+        
+        
+        
+        
+        <category>Electronics</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/wireless_mouse.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P013</productId>
+                                                
+        
+        
+        
+        
+        <name>Backpack</name>
+                                                
+        
+        
+        
+        
+        <description>Durable backpack with multiple compartments and padded shoulder straps.</description>
+                                                
+        
+        
+        
+        
+        <price>49.99</price>
+                                                
+        
+        
+        
+        
+        <category>Accessories</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/backpack.jpg</imageUrl>
+                                            
+    
+    
+    
+    
+    </product>
+                        
+    
+    
+    
+    
+    <product>
+                                                
+        
+        
+        
+        
+        <productId>P014</productId>
+                                                
+        
+        
+        
+        
+        <name>Table Lamp</name>
+                                                
+        
+        
+        
+        
+        <description>Modern table lamp with adjustable brightness and a sleek design.</description>
+                                                
+        
+        
+        
+        
+        <price>79.00</price>
+                                                
+        
+        
+        
+        
+        <category>Home Decor</category>
+                                                
+        
+        
+        
+        
+        <imageUrl>images/table_lamp.jpg</imageUrl>
+
+    </product>
+
+    <product>
+                
+        <productId>P015</productId>
+                
+        <name>Board Game</name>
+                
+        <description>Classic board game for family and friends to enjoy.</description>
+                
+        <price>29.98</price>
+                
+        <category>Games</category>
+                
+        <imageUrl>images/board_game.jpg</imageUrl>
+            
+    </product>
+    
+    <product>
+                
+        <productId>P111</productId>
+                
+        <name>Laptop</name>
+                
+        <description>High-end laptop.</description>
+                
+        <price>1200.99</price>
+                
+        <category>Laptop</category>
+                
+        <imageUrl>images/Laptop.jpg</imageUrl>
+            
+    </product>
+</products>

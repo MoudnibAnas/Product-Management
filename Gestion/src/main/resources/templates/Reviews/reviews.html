@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+<main class="max-w-6xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+    <section class="p-6 border-b flex justify-between items-center">
+        <h1 class="text-2xl font-semibold text-gray-700">Product Reviews</h1>
+        <div class="relative">
+            <input type="search" id="searchInput" placeholder="Search Review for a product..." class="pl-10 pr-4 py-2 border rounded-md focus:ring focus:ring-blue-200">
+            <img th:src="@{/icons/search-icon.png}" alt="Search" class="absolute left-3 top-2 w-5 h-5">
+        </div>
+    </section>
+    <section class="p-6 overflow-x-auto">
+        <table class="min-w-full border rounded-lg overflow-hidden shadow-md">
+            <thead>
+            <tr class="bg-gray-200">
+                <th class="py-3 px-4 text-left">Product ID</th>
+                <th class="py-3 px-4 text-left">Customer ID</th>
+                <th class="py-3 px-4 text-left">Rating</th>
+                <th class="py-3 px-4 text-left">Review</th>
+                <th class="py-3 px-4 text-left">Action</th>
+            </tr>
+            </thead>
+            <tbody class="divide-y">
+            <tr th:each="review : ${reviews}" class="hover:bg-gray-100">
+                <td class="py-2 px-4" th:text="${review.productId}"></td>
+                <td class="py-2 px-4" th:text="${review.customerId}"></td>
+                <td class="py-2 px-4" th:text="${review.rating}"></td>
+                <td class="py-2 px-4" th:text="${review.reviewText}"></td>
+                <td class="py-2 px-4">
+                    <button class="delete-btn bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600" th:attr="data-id=${review.reviewText}">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<script th:src="@{/js/script.js}"></script>
+<script th:src="@{/js/reviews.js}"></script>
+</body>
+
+</html>

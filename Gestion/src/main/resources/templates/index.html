@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Data Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        body {
+    background: url('flat-lay-paper-bags-chewing-gummies-blue-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.glass {
+    background: rgba(0, 0, 0, 0.3); /* Ajout d'une légère ombre noire avec transparence */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px; /* Limite la largeur maximale du contenu */
+}
+    </style>
+</head>
+<body>
+
+<div class="glass">
+    <h1 class="text-4xl font-extrabold text-center mb-8 tracking-wide">🚀 Manage Your Data Like a Pro</h1>
+
+    <div class="grid gap-6">
+        <!-- Download Section -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <i class="ph ph-download"></i> Download Datasets
+            </h2>
+            <div class="flex items-center gap-4">
+                <select id="xmlFileSelect" class="p-3 text-black rounded-md flex-1">
+                    <option value="categories.xml">Categories</option>
+                    <option value="products.xml">Products</option>
+                    <option value="reviews.xml">Reviews</option>
+                </select>
+                <button id="downloadButton" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg flex items-center gap-2 text-white">
+                    <i class="ph ph-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-md">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <i class="ph ph-upload"></i> Validate & Append XML Data
+            </h2>
+            <form id="uploadForm" enctype="multipart/form-data" class="flex flex-col gap-4">
+                <input type="file" name="xmlFile" accept=".xml" required class="p-3 rounded-md text-black">
+                <select name="schemaType" required class="p-3 rounded-md text-black">
+                    <option value="categories">Categories (DTD)</option>
+                    <option value="products">Products (XSD)</option>
+                    <option value="reviews">Reviews (XSD)</option>
+                </select>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" name="appendData" id="appendData"> Append Data
+                </label>
+                <button type="submit" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg flex items-center gap-2 text-white">
+                    <i class="ph ph-upload"></i> Validate & Add
+                </button>
+            </form>
+            <div id="result" class="mt-4 text-center"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Cards -->
+    <div class="mt-10 grid grid-cols-3 gap-6 text-center">
+        <div class="redirect-div bg-purple-600 hover:bg-purple-500 px-6 py-4 rounded-lg cursor-pointer shadow-lg text-lg font-bold" th:onclick="|window.location.href='@{/categories}';|">
+            <i class="ph ph-folder"></i> Categories
+        </div>
+        <div class="redirect-divbg-red-600 hover:bg-red-500 px-6 py-4 rounded-lg cursor-pointer shadow-lg text-lg font-bold" th:onclick="|window.location.href='@{/products}';|">
+            <i class="ph ph-shopping-cart"></i> Products
+        </div>
+        <div class="redirect-div bg-yellow-600 hover:bg-yellow-500 px-6 py-4 rounded-lg cursor-pointer shadow-lg text-lg font-bold" th:onclick="|window.location.href='@{/reviews}';|">
+            <i class="ph ph-star"></i> Reviews
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("uploadForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData();
+        formData.append("xmlFile", document.querySelector("input[type=file]").files[0]);
+        formData.append("schemaType", document.querySelector("select[name=schemaType]").value);
+        formData.append("append", document.getElementById("appendData").checked);
+        fetch("/api/validate", { method: "POST", body: formData })
+            .then(response => response.text())
+            .then(data => { document.getElementById("result").innerHTML = `<p>${data}</p>`; })
+            .catch(error => { document.getElementById("result").innerHTML = "<p>Error occurred while processing the request.</p>"; });
+    });
+    document.getElementById("downloadButton").addEventListener("click", function() {
+        const selectedFile = document.getElementById("xmlFileSelect").value;
+        window.location.href = `/api/download?fileName=${encodeURIComponent(selectedFile)}`;
+    });
+</script>
+</body>
+</html>
