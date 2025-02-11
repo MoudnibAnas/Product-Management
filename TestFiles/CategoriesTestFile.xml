@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE categories SYSTEM "C:\GitLab\Gestion\src\main\resources\dtd\categories.dtd">
+
+<categories>
+    <category>
+        <categoryId>C001</categoryId>
+        <name>Electronics</name>
+        <description>A wide range of electronic devices and gadgets.</description>
+    </category>
+    <category>
+        <categoryId>C002</categoryId>
+        <name>Clothing</name>
+        <description>Apparel and accessories for men, women, and children.</description>
+    </category>
+    <category>
+        <categoryId>C003</categoryId>
+        <name>Shoes</name>
+        <description>Footwear for various activities and styles.</description>
+    </category>
+    <category>
+        <categoryId>C004</categoryId>
+        <name>Home Appliances</name>
+        <description>Household appliances for everyday use.</description>
+    </category>
+    <category>
+        <categoryId>C005</categoryId>
+        <name>Furniture</name>
+        <description>Home furnishings and decor.</description>
+    </category>
+    <category>
+        <categoryId>C006</categoryId>
+        <name>Accessories</name>
+        <description>A variety of accessories and personal items.</description>
+    </category>
+    <category>
+        <categoryId>C007</categoryId>
+        <name>Home Decor</name>
+        <description>Decorative items for the home.</description>
+    </category>
+    <category>
+        <categoryId>C008</categoryId>
+        <name>Games</name>
+        <description>Board games, video games, and other games.</description>
+    </category>
+</categories>

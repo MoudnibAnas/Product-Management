@@ -1,0 +1,10 @@
+<products>
+    <product>
+        <productId>P111</productId>
+        <name>Laptop</name>
+        <description>High-end laptop.</description>
+        <price>1200.99</price>
+        <category>Laptop</category>
+        <imageUrl>images/Laptop.jpg</imageUrl>
+    </product>
+</products>

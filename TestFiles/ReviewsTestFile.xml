@@ -1,0 +1,8 @@
+<reviews>
+    <review>
+        <productId>P001</productId>
+        <customerId>C177</customerId>
+        <rating>5</rating>
+        <reviewText>Excellent!</reviewText>
+    </review>
+</reviews>
